@@ -1,0 +1,152 @@
+/* ===========================
+   MY CARD SECTION
+=========================== */
+
+.mycard-section {
+  max-width: 1250px;
+  margin: 60px auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.mycard-box {
+  width: 102px;
+  height: 82px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #eef0f6;
+
+  transition: 0.3s ease;
+}
+
+.mycard-box:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON */
+
+.mycard-icon {
+  font-size: 15px !important;
+
+  margin-bottom: 8px;
+}
+
+.mc-blue {
+  color: #3f4768;
+}
+
+.mc-pink {
+  color: #e63b67;
+}
+
+/* VALUE */
+
+.mycard-box h3 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  color: #2f3654;
+
+  line-height: 1;
+}
+
+/* LABEL */
+
+.mycard-box p {
+  margin-top: 5px;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  color: #9aa2b8;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 900px) {
+  .mycard-box {
+    width: 95px;
+    height: 78px;
+  }
+
+  .mycard-box h3 {
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .mycard-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .mycard-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mycard-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mycard-box {
+  width: 102px;
+  height: 82px;
+}
+.mycard-box {
+  width: 185px;
+  height: 120px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #eef0f6;
+
+  transition: 0.3s ease;
+}
+.mycard-icon {
+  font-size: 22px !important;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .mycard-box {
+    width: 160px;
+    height: 110px;
+  }
+
+  .mycard-box h3 {
+    font-size: 28px;
+  }
+}

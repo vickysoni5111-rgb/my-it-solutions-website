@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featured-section {
+  width: 100%;
+  background: #f4f5fa;
+  padding: 80px 8%;
+}
+
+.featured-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.featured-content {
+  flex: 1;
+}
+
+.featured-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0d1b5e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.featured-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #091133;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+.featured-description {
+  max-width: 520px;
+  margin-top: 20px;
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.stat-item h2 {
+  font-size: 36px;
+  color: #091133;
+  font-weight: 700;
+}
+
+.stat-item span {
+  font-size: 14px;
+  color: #666;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.demo-btn {
+  background: #d90452;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.demo-btn:hover {
+  background: #b40043;
+}
+
+.tour-btn {
+  background: white;
+  border: 2px solid #0d1b5e;
+  color: #0d1b5e;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tour-btn:hover {
+  background: #0d1b5e;
+  color: white;
+}
+
+.featured-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-image img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .featured-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .button-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .featured-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-title {
+    font-size: 30px;
+  }
+
+  .stats {
+    gap: 25px;
+  }
+
+  .stat-item h2 {
+    font-size: 28px;
+  }
+}

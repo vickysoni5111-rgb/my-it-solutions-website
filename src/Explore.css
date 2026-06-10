@@ -1,0 +1,118 @@
+.explore-section{
+  width:100%;
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+.explore-card{
+  width:100%;
+  max-width:1200px;
+
+  background:linear-gradient(
+    135deg,
+    #081f73,
+    #102a83,
+    #22145e
+  );
+
+  border-radius:22px;
+
+  padding:70px 30px;
+
+  text-align:center;
+
+  box-shadow:0 15px 40px rgba(8,31,115,.25);
+}
+
+.explore-card h2{
+  color:#ffffff;
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.explore-card p{
+  max-width:700px;
+  margin:auto;
+  color:rgba(255,255,255,.75);
+  line-height:1.8;
+  font-size:16px;
+  margin-bottom:35px;
+}
+
+.explore-buttons{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.consult-btn{
+  background:#e11d48;
+  color:white;
+  border:none;
+  padding:15px 28px;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.consult-btn:hover{
+  transform:translateY(-3px);
+}
+
+.portfolio-btn{
+  background:transparent;
+  color:white;
+  border:1px solid rgba(255,255,255,.25);
+  padding:15px 28px;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.portfolio-btn:hover{
+  background:rgba(255,255,255,.08);
+}
+
+@media(max-width:768px){
+
+  .explore-card{
+    padding:50px 25px;
+  }
+
+  .explore-card h2{
+    font-size:30px;
+  }
+
+  .explore-card p{
+    font-size:14px;
+  }
+
+  .explore-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .consult-btn,
+  .portfolio-btn{
+    width:100%;
+    max-width:280px;
+  }
+}
+
+@media(max-width:480px){
+
+  .explore-card h2{
+    font-size:24px;
+  }
+
+  .explore-card{
+    padding:40px 20px;
+  }
+}

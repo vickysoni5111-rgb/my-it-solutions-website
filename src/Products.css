@@ -1,0 +1,175 @@
+/* Whole section */
+.products-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: #f6f9ff;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading h5 {
+  color: #4a6cf7;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.heading h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+/* PRODUCTS GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(74, 108, 247, 0.25);
+}
+
+/* IMAGE FIX (IMPORTANT PART) */
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;   /* <-- THIS FIXES IMAGE CUTTING ISSUE */
+  display: block;
+}
+
+/* CARD CONTENT */
+.product-card h3 {
+  font-size: 18px;
+  margin: 15px 15px 5px;
+  color: #111;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.product-card button {
+  margin: 0 15px 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4a6cf7, #6a5af9);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* WHY SECTION */
+.why-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+/* STATS SECTION */
+.stats-section {
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 26px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #4a6cf7, #6a5af9);
+  color: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+.stat-card h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;        /* thoda increase kar diya */
+  object-fit: contain;  /* 🔥 IMPORTANT: full image dikhegi */
+  background: #f2f4ff;  /* empty space ko clean look dega */
+  padding: 10px;        /* image ko breathing space */
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  padding: 12px;
+  transition: 0.3s ease;
+}
