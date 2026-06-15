@@ -6,7 +6,7 @@ import MyCard from "./MyCard";
 import HeroCard from "./HeroCard";
 import Slider from "./Slider";
 import Explore from "./Explore";
-import paymentImage from "./assets/Payment Gateway Image 3 image.png";
+import paymentImage from "./assets/payment1.png";
 
 
 
@@ -100,51 +100,52 @@ const Home = () => {
       </section>
 <MyCard/>
       {/* SERVICES */}
-
       <section className="services">
 
-        <span className="section-tag">
-          WHAT WE OFFER
-        </span>
+  <div className="services-wrapper">
 
-        <h2>
-          Complete IT Services for Every Need
-        </h2>
+    <span className="section-tag">
+      WHAT WE OFFER
+    </span>
 
-        <p className="section-description">
-          Strategic tech solutions designed to help your business grow,
-          automate manual tasks, and succeed in a competitive digital landscape.
-        </p>
+    <h2>
+      Complete IT Services for Every Need
+    </h2>
 
-        <div className="services-grid">
+    <p className="section-description">
+      Strategic tech solutions designed to help your business grow,
+      automate manual tasks, and succeed in a competitive digital landscape.
+    </p>
 
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className={`service-card ${
-                activeCard === index ? "active" : ""
-              }`}
-              onClick={() => setActiveCard(index)}
-            >
-              <div className="icon-box">
-                <span className="material-symbols-outlined">
-                  {service.icon}
-                </span>
-              </div>
+    <div className="services-grid">
 
-              <h3>{service.title}</h3>
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className={`service-card ${
+            activeCard === index ? "active" : ""
+          }`}
+          onClick={() => setActiveCard(index)}
+        >
+          <div className="icon-box">
+            <span className="material-symbols-outlined">
+              {service.icon}
+            </span>
+          </div>
 
-              <p>{service.desc}</p>
+          <h3>{service.title}</h3>
 
-              <a href="/">
-                Learn More
-              </a>
-            </div>
-          ))}
+          <p>{service.desc}</p>
 
+          <a href="/">Learn More</a>
         </div>
+      ))}
 
-      </section>
+    </div>
+
+  </div>
+
+</section>
       
 <Card/>
 <HeroCard/>

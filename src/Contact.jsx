@@ -53,73 +53,78 @@ const Contact = () => {
 
         {/* CONTACT CARDS */}
 
-        <section className="contact-cards">
+       {/* CONTACT CARDS */}
 
-          <div className="info-card">
+<section className="contact-cards-section">
 
-            <div className="icon-box">
-              <span className="material-symbols-outlined">
-                mail
-              </span>
-            </div>
+  <div className="contact-cards">
 
-            <h3>Email Us</h3>
+    <div className="info-card">
 
-            <p>
-              Our specialized team responds within
-              4 business hours.
-            </p>
+      <div className="icon-box">
+        <span className="material-symbols-outlined">
+          mail
+        </span>
+      </div>
 
-            <span>
-              solutions@stwinsparx.com
-            </span>
+      <h3>Email Us</h3>
 
-          </div>
+      <p>
+        Our specialized team responds within
+        4 business hours.
+      </p>
 
-          <div className="info-card">
+      <span>
+        [solutions@stwinsparx.com](mailto:solutions@stwinsparx.com)
+      </span>
 
-            <div className="icon-box">
-              <span className="material-symbols-outlined">
-                call
-              </span>
-            </div>
+    </div>
 
-            <h3>Call Us</h3>
+    <div className="info-card">
 
-            <p>
-              Direct access to our consultants
-              for urgent inquiries.
-            </p>
+      <div className="icon-box">
+        <span className="material-symbols-outlined">
+          call
+        </span>
+      </div>
 
-            <span>
-              +1 (800) SPARX-OFFICE
-            </span>
+      <h3>Call Us</h3>
 
-          </div>
+      <p>
+        Direct access to our consultants
+        for urgent inquiries.
+      </p>
 
-          <div className="info-card">
+      <span>
+        +1 (800) SPARX-OFFICE
+      </span>
 
-            <div className="icon-box">
-              <span className="material-symbols-outlined">
-                location_on
-              </span>
-            </div>
+    </div>
 
-            <h3>Visit Us</h3>
+    <div className="info-card">
 
-            <p>
-              Visit our innovation hubs
-              for a face-to-face workshop.
-            </p>
+      <div className="icon-box">
+        <span className="material-symbols-outlined">
+          location_on
+        </span>
+      </div>
 
-            <span>
-              Global HQ: New York & Bengaluru
-            </span>
+      <h3>Visit Us</h3>
 
-          </div>
+      <p>
+        Visit our innovation hubs
+        for a face-to-face workshop.
+      </p>
 
-        </section>
+      <span>
+        Global HQ: New York & Bengaluru
+      </span>
 
+    </div>
+
+  </div>
+
+</section>
         {/* PROJECT DISCOVERY */}
 
         <section className="project-section">

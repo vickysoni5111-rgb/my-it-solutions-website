@@ -63,48 +63,151 @@
 
 /* CARDS */
 
-.contact-cards{
-  max-width:1400px;
-  margin:auto;
-  padding:60px 5%;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+/* ===================================
+   CONTACT CARDS SECTION
+=================================== */
+/* CARDS - Modified to fit in single row with smaller size */
+/* PROJECT */
+
+/* ===================================
+   CONTACT CARDS SECTION - Single Row with Equal Width & Cube Size
+=================================== */
+
+.contact-cards-section {
+  width: 100%;
+  background: #edf4ff;
+  padding: 90px 0;
+}
+.contact-cards {
+  max-width: 1300px; /* 1200px से 1300px किया */
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.contact-cards {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* तीनों कार्ड एक ही row में, equal width */
+  gap: 24px;
 }
 
-.info-card{
-  background:white;
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 8px 25px rgba(0,0,0,.05);
+.info-card {
+  background: #fff;
+  padding: 24px 22px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  min-height: 220px; /* cube jaisa size - high equal */
+  height: 220px; /* fixed height for equal cube size */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.info-card h3{
-  margin:15px 0;
-  color:#071952;
+.icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
 }
 
-.info-card p{
-  color:#64748b;
-  margin-bottom:15px;
+.icon-box span {
+  font-size: 18px;
+  color: #071952;
 }
 
-.info-card span{
-  color:#e11d48;
-  font-weight:600;
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #071952;
+  margin: 0 0 10px;
 }
 
+.info-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0 0 12px;
+}
+
+.info-card span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e11d48;
+  margin-top: auto; /* email/phone/place ko bottom me align */
+}
+
+/* Responsive: 2 columns on tablet */
+@media (max-width: 992px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 column on mobile */
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
 .icon-box{
-  width:45px;
-  height:45px;
-  border-radius:10px;
+  width:34px;
+  height:34px;
+  border-radius:8px;
   background:#f1f5f9;
   display:flex;
   align-items:center;
   justify-content:center;
+  margin-bottom:18px;
 }
 
-/* PROJECT */
+.icon-box span{
+  font-size:18px;
+  color:#071952;
+}
+
+.info-card h3{
+  font-size:18px;
+  font-weight:700;
+  color:#071952;
+  margin:0 0 10px;
+}
+
+.info-card p{
+  font-size:13px;
+  line-height:1.6;
+  color:#64748b;
+  margin:0 0 12px;
+}
+
+.info-card span{
+  font-size:12px;
+  font-weight:700;
+  color:#e11d48;
+  margin-top:auto;
+}
+
+/* Responsive */
+@media (max-width:992px){
+  .contact-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:768px){
+  .contact-cards{
+    grid-template-columns:1fr;
+  }
+}
+
 
 .project-section{
   max-width:1400px;
@@ -407,4 +510,185 @@ textarea{
   color:#64748b;
   line-height:1.7;
   font-size:15px;
+}
+
+/* ===================================
+   FULL MOBILE RESPONSIVE FIX
+=================================== */
+
+@media (max-width: 992px) {
+
+  .contact-hero{
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .contact-left{
+    min-width: 100%;
+  }
+
+  .contact-left h1{
+    font-size: 42px;
+    max-width: 100%;
+  }
+
+  .contact-left p{
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .contact-right img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .project-section{
+    grid-template-columns: 1fr;
+  }
+
+  .global-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-page{
+    overflow-x: hidden;
+  }
+
+  .contact-hero{
+    padding: 50px 20px;
+  }
+
+  .contact-left{
+    min-width: unset;
+    width: 100%;
+  }
+
+  .contact-left h1{
+    font-size: 32px;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+
+  .contact-left p{
+    font-size: 15px;
+  }
+
+  .contact-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-right img{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-cards{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .info-card{
+    height: auto;
+    min-height: 180px;
+  }
+
+  .project-section{
+    padding: 40px 20px;
+  }
+
+  .project-left,
+  .project-right{
+    padding: 25px;
+  }
+
+  .row{
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  input,
+  select,
+  textarea{
+    font-size: 16px;
+  }
+
+  .global-section{
+    padding: 60px 20px;
+  }
+
+  .global-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .city-card{
+    height: 250px;
+  }
+
+  .overlay h3{
+    font-size: 24px;
+  }
+
+  .faq-section{
+    padding: 60px 20px;
+  }
+
+  .faq-section h2{
+    font-size: 28px;
+  }
+
+  .faq-item summary{
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .faq-item p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contact-left h1{
+    font-size: 28px;
+  }
+
+  .contact-tag{
+    font-size: 11px;
+    padding: 8px 14px;
+  }
+
+  .project-left,
+  .project-right{
+    padding: 20px;
+  }
+
+  .city-card{
+    height: 220px;
+  }
+
+  .overlay{
+    padding: 20px;
+  }
+
+  .overlay h3{
+    font-size: 20px;
+  }
+
+  .faq-section h2{
+    font-size: 24px;
+  }
+}
+.contact-left{
+  flex:1;
+  min-width:0;
 }

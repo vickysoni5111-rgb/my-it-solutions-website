@@ -14,10 +14,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        {/* Jab path '/' ho, tab Home dikhe */}
+
         <Route path="/" element={<Home />} />
         
-        {/* Jab path '/products' ho, tab sirf Products dikhe */}
+ 
         <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services1/>} />
            <Route path="/contact" element={<Contact/>} />
